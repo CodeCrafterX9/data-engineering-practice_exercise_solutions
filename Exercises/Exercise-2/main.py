@@ -19,7 +19,7 @@ def main():
 
     with open(filename,'wb') as f:
         f.write(csv_reponse.content)
-
+        
     data = pd.read_csv(filename)
     max_bulb_temp = data['HourlyDryBulbTemperature'].max()
 
